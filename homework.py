@@ -7,7 +7,7 @@ class Complex:
             n=Complex(n)
             return n
         else:
-            raise TypeError("Несоответствующее значение")
+            raise TypeError(f"unsupported operand type(s) for +: 'Complex' and '{type(other).__name__}'")
     def __init__(self, re=0, img=0):
         self.re = re
         self.img = img
